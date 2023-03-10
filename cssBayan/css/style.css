@@ -35,10 +35,12 @@ h3 {
 
 .header__title {
     font-family: 'Caveat Brush';
-    /* font-weight: 200; */
+    font-size: 90px;
 }
-.label__title{
+
+.label__title {
     font-family: 'Caveat';
+    font-size: 70px;
 }
 
 .main__accordion:hover .label__title {
@@ -81,7 +83,9 @@ h3 {
 }
 
 .item__input:checked~.item__tab {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .label__sign {
@@ -102,9 +106,13 @@ h3 {
 }
 
 .item__label:hover+.item__tab {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .item__label:hover .label__body .label__sign {
     transform: rotate(45deg);
 }
+
+/* попробовать менять опасити */
