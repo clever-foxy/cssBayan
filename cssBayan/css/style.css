@@ -1,3 +1,24 @@
+/* caveat-brush-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Caveat Brush';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/cssBayan/font/caveat-brush-v11-latin/caveat-brush-v11-latin-regular.woff'),
+        url('/cssBayan/font/caveat-brush-v11-latin/caveat-brush-v11-latin-regular.woff2');
+}
+
+/* caveat-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Caveat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/cssBayan/font/caveat-v17-latin/caveat-v17-latin-regular.woff'),
+        url('/cssBayan/font/caveat-v17-latin/caveat-v17-latin-regular.woff2');
+}
+
+
 body {
     background-color: rgb(240, 218, 189);
 }
@@ -10,6 +31,14 @@ h3 {
 .wrapper {
     max-width: 80%;
     margin: 2% auto;
+}
+
+.header__title {
+    font-family: 'Caveat Brush';
+    /* font-weight: 200; */
+}
+.label__title{
+    font-family: 'Caveat';
 }
 
 .main__accordion:hover .label__title {
@@ -38,6 +67,11 @@ h3 {
 .item__label {
     display: block;
     cursor: pointer;
+}
+
+.item__label,
+.item__tab {
+    margin-bottom: 2%;
 }
 
 .item__input {
