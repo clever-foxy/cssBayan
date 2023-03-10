@@ -12,32 +12,61 @@ h3 {
     margin: 2% auto;
 }
 
-.item__label{
+.main__accordion:hover .label__title {
+    color: black;
+}
+
+
+.main__accordion:hover .label__sign {
+    opacity: 1;
+}
+
+.label__title {
+    color: blue;
+}
+
+.item__input:checked~.item__label .label__body .label__title {
+    color: black;
+}
+
+
+
+.item__input:checked~.item__label .label__body .label__sign {
+    transform: rotate(45deg);
+}
+
+.item__label {
     display: block;
     cursor: pointer;
 }
-.item__input{
+
+.item__input {
     opacity: 0;
     width: 0;
     height: 0;
 }
-.item__input:checked ~ .item__tab{
+
+.item__input:checked~.item__tab {
     display: block;
 }
+
+.label__sign {
+    opacity: 0;
+}
+
 .label__body {
     display: flex;
     justify-content: space-between;
 }
 
-.accordion__item{
+.accordion__item {
     border-top: 1px solid grey;
 }
 
-.item__tab{
+.item__tab {
     display: none;
 }
 
-.item__label:hover + .item__tab{
+.item__label:hover+.item__tab {
     display: block;
 }
-
