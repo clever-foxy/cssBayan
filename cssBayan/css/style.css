@@ -70,3 +70,7 @@ h3 {
 .item__label:hover+.item__tab {
     display: block;
 }
+
+.item__label:hover .label__body .label__sign {
+    transform: rotate(45deg);
+}
