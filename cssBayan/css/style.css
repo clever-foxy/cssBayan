@@ -44,20 +44,23 @@ h3 {
 }
 
 .main__accordion:hover .label__title {
-    color: black;
+    animation: changeColor 3s ease; 
 }
 
 
 .main__accordion:hover .label__sign {
     opacity: 1;
+    animation: showPictures 3s ease;
 }
 
 .label__title {
+    animation: changeColorBlue 3s ease; 
     color: blue;
 }
 
 .item__input:checked~.item__label .label__body .label__title {
     color: black;
+    animation: changeColor 3s ease; 
 }
 
 
@@ -89,6 +92,7 @@ h3 {
 }
 
 .label__sign {
+    animation: hidePictures 3s ease;
     opacity: 0;
 }
 
@@ -98,11 +102,12 @@ h3 {
 }
 
 .accordion__item {
-    border-top: 1px solid grey;
+    border-top: 1px solid grey ;
 }
 
 .item__tab {
     display: none;
+    animation: showPictures 3s ease-in;
 }
 
 .item__label:hover+.item__tab {
@@ -115,4 +120,43 @@ h3 {
     transform: rotate(45deg);
 }
 
-/* попробовать менять опасити */
+/* попробовать менять опасити для анимации (добавить опасити 0/1 и менять при анимации)*/
+/* проверить баг с ротайт + - он укда-то скачет в строну, также поменять плюс на cvg файл, чтобы была иконка */
+
+@keyframes showPictures {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hidePictures {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        color: blue;
+    }
+    100% {
+        color: black
+        ;
+    }
+}
+
+@keyframes changeColorBlue {
+    0% {
+        color: black;
+    }
+    100% {
+        color: blue
+        ;
+    }
+}
