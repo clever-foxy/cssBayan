@@ -59,7 +59,7 @@ h3 {
     height: 0;
 }
 
-.main__accordion:hover .label__title {
+/* .main__accordion:hover .label__title {
     animation: changeColor 3s ease;
     color: black;
 }
@@ -67,7 +67,7 @@ h3 {
 .main__accordion:hover .label__sign {
     opacity: 1;
     animation: showPictures 3s ease;
-}
+} */
 
 .label__title {
     animation: changeColorBlue 2s ease;
@@ -80,9 +80,9 @@ h3 {
 }
 
 
-.item__input:checked~.item__label .label__body .label__sign {
+/* .item__input:checked~.item__label .label__body .label__sign {
     transform: rotate(45deg);
-}
+} */
 
 .item__label {
     display: block;
@@ -100,14 +100,28 @@ h3 {
     height: 0;
 }
 
-.accordion__item:hover .item__tab {
+/* .accordion__item:hover .item__tab {
     transform: scaleY(1);
 }
 
 .accordion__item:hover .tab__img {
     visibility: visible;
     height: 100%;
+} */
+
+
+/* .accordion__item:active .label__title {
+    animation: changeColorBlue 3s ease;
 }
+
+.accordion__item:active .label__sign {
+    animation: animationSign 10s infinite alternate;
+} */
+
+
+
+
+
 
 .item__input:checked+.item__label .item__tab {
     transform: scaleY(1);
@@ -119,7 +133,7 @@ h3 {
 }
 
 .label__sign {
-    animation: hidePictures 2s ease;
+    /* animation: hidePictures 2s ease; */
     opacity: 0;
 }
 
@@ -133,9 +147,9 @@ h3 {
 }
 
 
-.item__label:hover .label__body .label__sign {
+/* .item__label:hover .label__body .label__sign {
     transform: rotate(45deg);
-}
+} */
 
 @keyframes showPictures {
     0% {
@@ -176,3 +190,12 @@ h3 {
         color: blue;
     }
 }
+
+@keyframes animationSign {
+    from {
+      fill: red;
+    }
+    to {
+      fill: green;
+    }
+  }
