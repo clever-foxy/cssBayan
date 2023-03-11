@@ -4,8 +4,8 @@
     font-family: 'Caveat Brush';
     font-style: normal;
     font-weight: 400;
-    src: url('/cssBayan/font/caveat-brush-v11-latin/caveat-brush-v11-latin-regular.woff'),
-        url('/cssBayan/font/caveat-brush-v11-latin/caveat-brush-v11-latin-regular.woff2');
+    src: url('../../cssBayan/font/caveat-brush-v11-latin/caveat-brush-v11-latin-regular.woff'),
+        url('../../cssBayan/font/caveat-brush-v11-latin/caveat-brush-v11-latin-regular.woff2');
 }
 
 /* caveat-regular - latin */
@@ -14,8 +14,8 @@
     font-family: 'Caveat';
     font-style: normal;
     font-weight: 400;
-    src: url('/cssBayan/font/caveat-v17-latin/caveat-v17-latin-regular.woff'),
-        url('/cssBayan/font/caveat-v17-latin/caveat-v17-latin-regular.woff2');
+    src: url('../../cssBayan/font/caveat-v17-latin/caveat-v17-latin-regular.woff'),
+        url('../../cssBayan/font/caveat-v17-latin/caveat-v17-latin-regular.woff2');
 }
 
 
@@ -43,8 +43,12 @@ h3 {
     font-size: 70px;
 }
 
+.label__sign {
+    width: 2rem;
+}
+
 .main__accordion:hover .label__title {
-    animation: changeColor 3s ease; 
+    animation: changeColor 3s ease;
 }
 
 
@@ -54,13 +58,13 @@ h3 {
 }
 
 .label__title {
-    animation: changeColorBlue 3s ease; 
+    animation: changeColorBlue 3s ease;
     color: blue;
 }
 
 .item__input:checked~.item__label .label__body .label__title {
     color: black;
-    animation: changeColor 3s ease; 
+    animation: changeColor 3s ease;
 }
 
 
@@ -102,7 +106,7 @@ h3 {
 }
 
 .accordion__item {
-    border-top: 1px solid grey ;
+    border-top: 1px solid grey;
 }
 
 .item__tab {
@@ -120,13 +124,11 @@ h3 {
     transform: rotate(45deg);
 }
 
-/* попробовать менять опасити для анимации (добавить опасити 0/1 и менять при анимации)*/
-/* проверить баг с ротайт + - он укда-то скачет в строну, также поменять плюс на cvg файл, чтобы была иконка */
-
 @keyframes showPictures {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -136,6 +138,7 @@ h3 {
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
@@ -145,9 +148,9 @@ h3 {
     0% {
         color: blue;
     }
+
     100% {
-        color: black
-        ;
+        color: black;
     }
 }
 
@@ -155,8 +158,8 @@ h3 {
     0% {
         color: black;
     }
+
     100% {
-        color: blue
-        ;
+        color: blue;
     }
 }
