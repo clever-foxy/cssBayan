@@ -47,14 +47,7 @@ h3 {
 }
 
 .item__tab {
-    /* visibility: hidden; */
-    /* height: 0; */
-    /* visibility: hidden;
-    height: 0; */
-    /* display: none; */
     text-align: center;
-
-
     will-change: transform;
     transition: transform 2s;
     transform: scaleY(0);
@@ -107,27 +100,6 @@ h3 {
     height: 0;
 }
 
-
-/* .item__label:hover ~ .item__tab { */
-/* display: block;
-    opacity: 1;
-    height: auto; */
-/* visibility: visible;
-    height: 100%; */
-
-/* transform: scaleY(1); */
-/* } */
-
-/* .item__label:hover ~ .item__tab .tab__img { */
-/* display: block;
-    opacity: 1;
-    height: auto; */
-/* visibility: visible; */
-/* height: 100%; */
-
-/* transform: scaleY(1); */
-/* } */
-
 .accordion__item:hover .item__tab {
     transform: scaleY(1);
 }
@@ -137,24 +109,13 @@ h3 {
     height: 100%;
 }
 
-
-
-
-
-.item__input:checked~.item__tab {
-    /* display: block; */
-    /* visibility: visible; */
-    /* height: 100%; */
-    /* height: 100%; */
+.item__input:checked+.item__label .item__tab {
     transform: scaleY(1);
 }
 
-.item__input:checked~.item__tab .tab__img {
-    /* display: block; */
+.item__input:checked+.item__label .item__tab .tab__img {
     visibility: visible;
-    /* height: 100%; */
     height: 100%;
-    /* transform: scaleY(1); */
 }
 
 .label__sign {
@@ -170,9 +131,6 @@ h3 {
 .accordion__item {
     border-top: 1px solid grey;
 }
-
-
-
 
 
 .item__label:hover .label__body .label__sign {
