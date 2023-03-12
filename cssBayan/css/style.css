@@ -1,0 +1,203 @@
+/* caveat-brush-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Caveat Brush';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../cssBayan/font/caveat-brush-v11-latin/caveat-brush-v11-latin-regular.woff'),
+        url('../../cssBayan/font/caveat-brush-v11-latin/caveat-brush-v11-latin-regular.woff2');
+}
+
+/* caveat-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Caveat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../cssBayan/font/caveat-v17-latin/caveat-v17-latin-regular.woff'),
+        url('../../cssBayan/font/caveat-v17-latin/caveat-v17-latin-regular.woff2');
+}
+
+body {
+    background-color: rgb(240, 218, 189);
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 80%;
+    margin: 2% auto;
+}
+
+.header__title {
+    font-family: 'Caveat Brush';
+    font-size: 90px;
+}
+
+.label__title {
+    font-family: 'Caveat';
+    font-size: 70px;
+}
+
+.label__sign {
+    width: 2rem;
+}
+
+.item__tab {
+    text-align: center;
+    will-change: transform;
+    transition: transform 2s;
+    transform: scaleY(0);
+    /* transform-origin: 50% 0; */
+}
+
+.tab__img {
+    visibility: hidden;
+    height: 0;
+}
+
+/* .main__accordion:hover .label__title {
+    animation: changeColor 3s ease;
+    color: black;
+}
+
+.main__accordion:hover .label__sign {
+    opacity: 1;
+    animation: showPictures 3s ease;
+} */
+
+.label__title {
+    animation: changeColorBlue 2s ease;
+    color: blue;
+}
+
+.item__input:checked~.item__label .label__body .label__title {
+    color: black;
+    animation: changeColor 3s ease;
+}
+
+
+/* .item__input:checked~.item__label .label__body .label__sign {
+    transform: rotate(45deg);
+} */
+
+.item__label {
+    display: block;
+    cursor: pointer;
+}
+
+.item__label,
+.item__tab {
+    margin-bottom: 2%;
+}
+
+.item__input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* .accordion__item:hover .item__tab {
+    transform: scaleY(1);
+}
+
+.accordion__item:hover .tab__img {
+    visibility: visible;
+    height: 100%;
+} */
+
+
+/* .accordion__item:active .label__title {
+    animation: changeColorBlue 3s ease;
+}
+
+.accordion__item:active .label__sign {
+    animation: animationSign 10s infinite alternate;
+} */
+
+
+.label__sign:active {
+    fill: orange;
+}
+
+
+
+.item__input:checked+.item__label .item__tab {
+    transform: scaleY(1);
+}
+
+.item__input:checked+.item__label .item__tab .tab__img {
+    visibility: visible;
+    height: 100%;
+}
+
+.label__sign {
+    /* animation: hidePictures 2s ease; */
+    opacity: 0;
+}
+
+.label__body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion__item {
+    border-top: 1px solid grey;
+}
+
+
+/* .item__label:hover .label__body .label__sign {
+    transform: rotate(45deg);
+} */
+
+@keyframes showPictures {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hidePictures {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        color: blue;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+@keyframes changeColorBlue {
+    0% {
+        color: black;
+    }
+
+    100% {
+        color: blue;
+    }
+}
+
+/* @keyframes animationSign {
+    0% {
+      color: black;
+    }
+    100% {
+        color: blue;
+    }
+  } */
