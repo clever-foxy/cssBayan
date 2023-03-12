@@ -119,7 +119,9 @@ h3 {
 } */
 
 
-
+.label__sign:active {
+    fill: orange;
+}
 
 
 
@@ -191,11 +193,11 @@ h3 {
     }
 }
 
-@keyframes animationSign {
-    from {
-      fill: red;
+/* @keyframes animationSign {
+    0% {
+      color: black;
     }
-    to {
-      fill: green;
+    100% {
+        color: blue;
     }
-  }
+  } */
